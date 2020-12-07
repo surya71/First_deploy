@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel = "stylesheet">
+    <link type = "text/css" rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type = "text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="shortcut icon" href="/icon.png" type="image/x-icon">
+    <!--include google icon-->
+    <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Shipper Login</title>
+    <style>
+		
+		body:before{
+				content: '';
+				position: fixed; 
+				width: 100vw;
+				height: 100vh;
+				background-image: url("/homeBG.jpg");
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: cover;
+				-webkit-filter: blur(10px);
+				-moz-filter: blur(10px);
+				-o-filter: blur(10px);
+				-ms-filter: blur(10px);
+				filter: blur(10px);
+		}
+    
+</style>
+</head>
+<body>
+    <br><br><br><br><br><br>
+    <div class="container" >
+        <div class="card horizontal" style="background-image: url('/shipperLogin.jpg');" >
+            <div class="card-content white" style="width: 500px;">
+                <div style="font-size:80px;"class ="grey grey-text right">
+                   <span>!</span><span class =" black-text white">J</span><span class=" black white-text">S</span><span>!</span>
+                </div>
+                
+                <div>
+                    <h2>Login</h2>
+                    <form method="POST" action="/shipper/login">
+                        <label for="username">Username</label>
+                        <input type="text" name="Username" required value=""/>
+                        <label for="password">Password</label>
+                        <input type="password" name="Password" required/>
+                        <br>    
+                        <br>
+                    
+                        <p>
+                            <label >
+                                <input type="checkbox" style="background: green;"> <span>Remember me</span>
+                            </label>
+                            <a href="">
+                                <span class="right grey-text">Forget password?</span> 
+                            </a>
+                        </p> 
+                        <br>
+                        <input class = "white-text btn" style="width: 450px; background-color:#00203FFF;"type="submit" name="login_user" value="Sign In">
+                        <br>
+                        <br>
+                        <p>
+                            Not yet have account? <a href="/shipper/register">Sign up</a>
+                        </p>
+                        <br>
+                        <hr>
+                        <div class="row">
+                            <div class="col m1"></div>
+                            <div class="col m4 btn" style="background-color: #dd4b39;">
+                                <a href="" class="white-text">
+                                    <i class="white-text  left fa fa-google-plus">
+                                    </i>
+                                    Google
+                                </a>
+                            </div>
+                            <div class="col m2"></div>
+                            <div class="col m4 btn" style="background-color:#4267B2;">
+                                <a href="" class="white-text">
+                                    <i class="white-text left fa fa-facebook">
+                                    </i>
+                                   Facebook
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col m1"></div>
+                            <div class="col m4 btn" style="background-color: #0e76a8;">
+                                <a href="" class="white-text ">
+                                    <i class="white-text left fa fa-linkedin">
+                                    </i>
+                                    linkedIn
+                                </a>
+                            </div>
+                            <div class="col m2"></div>
+                            <div class="col m4 btn" style="background-color: #333;">
+                                <a href="" class="white-text">
+                                    <i class="white-text  left fa fa-github">
+                                    </i>
+                                    github
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="card-image">
+              
+            </div>
+        </div>
+       
+    </div>
+    <br><br><br><br><br><br>
+    
+</body>
+</html>
