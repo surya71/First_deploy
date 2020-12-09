@@ -1,13 +1,13 @@
 const express = require('express');
 // const mongoose = require('mongoose');
-
+const path = require('path');
 class Transporter{
     Transporter()
     {
 
     }
     static login(req,res,err){
-        res.sendFile("/home/jai/Desktop/semester 5/ooad/project/pages/transporterLogin.html");
+        res.sendFile(path.join(process.cwd(),"pages/transporterLogin.html"));
     }
 }
 module.exports = {Transporter}  

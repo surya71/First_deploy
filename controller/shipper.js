@@ -9,14 +9,14 @@ class Shipper{
 
     }
     static login(req,res,err){
-        res.sendFile(path.join(__dirname, "pages/shipperLogin.html"));
+        res.sendFile(path.join(process.cwd(), "pages/shipperLogin.html"));
     }
     static loginAuth(req,res,next){
         console.log(req.body)
         console.log(db.collections)
     }
     static register(req,res,next){
-        res.sendFile(path.join(__dirname, "pages/shipperRegister.html"));
+        res.sendFile(path.join(process.cwd(), "pages/shipperRegister.html"));
     }
 }
 module.exports = {Shipper} ;
